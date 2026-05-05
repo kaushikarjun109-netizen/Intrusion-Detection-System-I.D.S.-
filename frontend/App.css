@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.navbar button {
+  padding: 10px 20px;
+  background: #4a6cf7;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar button:hover {
+  background: #3b5bd6;
+}
+
+/* ===== PANEL ===== */
+.panel {
+  width: 420px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+}
+
+/* ===== INPUTS ===== */
+input {
+  width: 95%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  padding: 10px;
+  margin: 8px;
+  background: #4a6cf7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #3b5bd6;
+}
+
+/* ===== RESULT BOX ===== */
+.result {
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.normal {
+  background: #28a745;
+}
+
+.attack {
+  background: #dc3545;
+}
+
+/* ===== STATUS (Deployment Diagram Mapping) ===== */
+.status {
+  margin-top: 10px;
+  padding: 10px;
+  background: rgba(0, 255, 150, 0.2);
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* ===== LOGS TABLE (ER Diagram Mapping) ===== */
+table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+th {
+  background: rgba(255,255,255,0.2);
+  padding: 8px;
+}
+
+td {
+  padding: 6px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.attack-text {
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+.normal-text {
+  color: #4dff88;
+  font-weight: bold;
+}
+
+/* ===== LOADING STATE (Sequence Diagram Mapping) ===== */
+.loading {
+  margin-top: 10px;
+  font-style: italic;
+  color: #ffc107;
+}
+
+/* ===== LOGIN SECTION ===== */
+.login-box {
+  margin-bottom: 15px;
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .panel {
+    width: 90%;
+  }
+}
